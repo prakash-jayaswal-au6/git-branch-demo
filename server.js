@@ -9,6 +9,9 @@ app.get('/users',auth,function(req,res){
     res.send("user route")
 })
 
+app.get('/users',auth,function(req,res){
+    res.send("users Route")
+})
 app.listen(1234,function(){
     console.log("server started at port 1234")
 })
