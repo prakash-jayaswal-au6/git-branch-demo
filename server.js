@@ -1,5 +1,5 @@
 var express = require('express')
-
+var auth = require('./middleware/authenticate')
 var app = express();
 
 app.get('/',function(Req,res){
